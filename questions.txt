@@ -1,0 +1,8 @@
+1) How does Sinatra store our application files/"listen" to them?
+2) Is it holding our controllers.rb file in a particular location so that all requests hit Sinatra and immediately get routed to the controller file?
+3) How exactly does a server configure itself to understand how to run Sinatra/write to disk?
+4) Where does postgres store the database?
+5) What exactly are the differences between postgres and sqlite3?
+6) How does it know which port to listen on?
+7) How exactly should a user be responsible for providing wildcards that DOES NOT involve manipulating the URL in the address bar?
+8) How exactly would you take a params array and pass it as an argument to a redirect which then points to another route at that argument, to potentially return another view or something from the method in which that params hash was instantiated?

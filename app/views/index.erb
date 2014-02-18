@@ -1,0 +1,98 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+
+  <form action ="/cool_url" method ="get" name="form1">
+    <h4>Tell me how you feel:</h4>
+    <input type="radio" name="form1" value="sick"></input>Sick
+    <br>
+    <input type="radio" name="form1" value="death"></input>Death
+    <br>
+    <input type="radio" name="form1" value="tired"></input>Tired
+    <br>
+    <br>
+
+    <input type="checkbox" name="form1" value="sick"></input>
+    <br>
+    <input type="checkbox" name="form1" value="death"></input>
+    <br>
+    <br>
+
+    <select name="form1">
+      <option>One</option>
+      <option>Two</option>
+      <option>Three</option>
+    </select>
+    <br>
+    <br>
+    <button>Submit</button>
+
+    <br>
+
+    <input type="text" name="post[title]">
+
+    <br>
+
+    <input type="text" name="post[price]">
+    <br>
+
+    <textarea name="post[description]"></textarea>
+  </form>
+
+  <form action ="/cool_url" name ="form2" method ="post">
+    <h4>Tell me how you feel:</h4>
+    <input type="radio" name="sick" value="sick"></input>Sick
+    <br>
+    <input type="radio" name="death" value="death"></input>Death
+    <br>
+    <input type="radio" name="tired" value="tired"></input>Tired
+    <br>
+    <br>
+
+    <input type="checkbox" name="cheese" value="cheese">sdfgsdfg</input>
+    <br>
+    <input type="checkbox" name ="fromage" value="3"></input>
+    <br>
+    <br>
+
+    <select name="sesa">
+      <option>One</option>
+      <option>Two</option>
+      <option>Three</option>
+    </select>
+    <br>
+    <br>
+    <button>Submit</button>
+
+    <br>
+
+    <input type="text" name="post[title]">
+
+    <br>
+
+    <input type="text" name="post[price]">
+    <br>
+
+    <textarea name="post[description]"></textarea>
+  </form>
+
+
+  <table>
+    <tr>
+      <th>File Description</th>
+      <th>File Location</th>
+    </tr>
+    <tr>
+      <td>This view file</td>
+      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The layout file</td>
+      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The current controller</td>
+      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+  </table>
+</div>
